@@ -46,9 +46,20 @@ a:hover{
     background-image: linear-gradient(90deg ,#F96C03, #CA415C, #B447AE);
     transition: background-color 0.3s ease;
 }
+
+h2.titulo{
+  color: #ffffff;
+  font-size: 28px; 
+  text-align: center; /*para centralizar a fonte*/
+}
+
+h2.titulo span{
+    color: #F96C03;
+}
+
 /*Estilo do cabeçalho*/
 header{
-    padding: 40px 4%;
+    padding: 40px 4%; /*para o espaçamento*/
 }
 
 header > .interface{
@@ -98,6 +109,47 @@ section.topo-do-site .flex{
     color: #ffffff;
     margin: 15px 0;
 }
+/*Estilo das espcialidades*/
+
+section.especialidades{
+padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 30px;
+}
+
+.especialidades .especialidades-box{
+   color: #ffffff;
+   padding: 60px; 
+   margin-top: 50px;
+   border-radius: 20px;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 6px;
+    border-color: #252525;
+    transition: .2s;
+ }
+
+.especialidades .especialidades-box i{
+    font-size: 58px; /*mesmo falando "font" isso para os icones*/
+    color: #F96C03;
+    
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 26px;
+    margin: 15px 0;
+   
+}
+
+
+
+
+
+
 
 
 
