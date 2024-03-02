@@ -145,6 +145,27 @@ section.especialidades .flex{
    
 }
 
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Estilos para o traço da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #1a1919; /* Cor de fundo da barra de rolagem */
+}
+
+/* Estilos para a alça da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #414141; /* Cor da alça da barra de rolagem */
+    border-radius: 5px; /* Raio da borda da alça */
+}
+
+/* Estilos para a alça da barra de rolagem quando o mouse está sobre ela */
+::-webkit-scrollbar-thumb:hover {
+    background: #302f2f; /* Cor da alça da barra de rolagem quando o mouse está sobre ela */
+}
+
 
 
 
