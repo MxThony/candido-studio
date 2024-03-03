@@ -157,15 +157,47 @@ section.especialidades .flex{
 
 /* Estilos para a alça da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background: #414141; /* Cor da alça da barra de rolagem */
+    background: linear-gradient(#F96C03, #CA415C, #B447AE); /* Cor da alça da barra de rolagem */
     border-radius: 5px; /* Raio da borda da alça */
+ 
 }
 
-/* Estilos para a alça da barra de rolagem quando o mouse está sobre ela */
-::-webkit-scrollbar-thumb:hover {
-    background: #302f2f; /* Cor da alça da barra de rolagem quando o mouse está sobre ela */
+
+
+/*Estilo do sobre*/
+
+section.sobre{
+    padding: 40px 4%;    
 }
 
+section.sobre .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.sobre.txt-sobre p{
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.sobre .txt-sobre .contato-social button{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    color: black;
+    background: linear-gradient(90deg ,#F96C03, #CA415C, #B447AE);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 20px 0 40px;
+}
 
 
 
