@@ -10,6 +10,18 @@
 
 }
 
+.contato-social button{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    color: black;
+    background: linear-gradient(90deg ,#F96C03, #CA415C, #B447AE);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 20px 0 40px;
+}
+
 body{
     background-color: black;
     height: 100vh;
@@ -187,17 +199,7 @@ section.sobre .flex{
     font-size: medium;
 }
 
-.sobre .txt-sobre .contato-social button{
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-    color: black;
-    background: linear-gradient(90deg ,#F96C03, #CA415C, #B447AE);
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    margin: 20px 0 40px;
-}
+
 
 /*Estilo do portfólio*/
 
@@ -339,4 +341,89 @@ footer{
     margin-top: 40px;
     padding: 60px 4%;
     background-color: #181818;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 10px 0;
+    border-bottom: 2px solid #F96C03;
+}
+
+
+
+
+/*Responsividade*/
+@media screen and (max-width: 1020px){
+    /*geral*/
+    .flex{
+        flex-direction: column;
+    }
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /*cabeçalho*/
+    .menu-desktop, .candido-contato{
+        display: none;
+    }
+
+    /*topo do site*/
+
+    section.topo-do-site .flex{
+        gap: 40px
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1{
+        font-size: 28px;
+        gap: 5px;
+    }
+
+    .topo-do-site p{
+        font-size: 25px;    
+    }
+    /*sobre*/
+    section.sobre{
+        padding: 20px 8%;
+    }
+
+    section.sobre{
+        align-items: center;
+    }
+    .sobre h2{
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+    .sobre p{
+        font-size: 15px;    
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+
+    /*Portfólio*/
+    .img-port{
+        width: 100%;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+     /*formulario*/
+     form{
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 40px;
+       
+     }
 }
