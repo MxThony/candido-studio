@@ -180,7 +180,7 @@ section.topo-do-site .flex{
 
 .topo-do-site{
     color: #ffffff;
-    font-size: 27px;
+    font-size: 28px;
 }
 
 
@@ -557,7 +557,7 @@ footer .line-footer{
 }   
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 997px) {
     .abrir-menu {
       display: none;
     }
