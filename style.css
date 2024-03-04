@@ -265,6 +265,10 @@ section.sobre .flex{
     font-size: medium;
 }
 
+.imag-sobre{
+    max-height: 500px;
+}
+
 
 
 /*Estilo do portfólio*/
@@ -421,160 +425,29 @@ footer .line-footer{
 
 
 
-/*Responsividade*/
-/* Estilos para telas maiores que 997px de largura */
-@media only screen and (min-width: 998px) {
-    /* Insira aqui os estilos para telas maiores que 997px */
-  }
+
+/*RECURSOS DE RESPONSIVIDADE*/
+
+@media only screen and (max-width: 1020px) {
+ 
   
-
-
-
-  /* Estilos para telas entre 641px e 997px de largura */
-  @media only screen and (max-width: 997px) and (min-width: 642px) {
-    /* Insira aqui os estilos para telas entre 641px e 997px */
+  
 
     .abrir-menu i{
-        font-size: 80px;
-      }
-
-
-
-  .logo{
-    
-    align-items: center;
-    max-width:300px;
-}
-
-.flex{
-    flex-direction: column;
-}
-.topo-do-site .flex{
-    flex-direction: column-reverse;
-}
-
-/*cabeçalho*/
-.menu-desktop, .candido-contato{
-    display: none;
-}
-
-/*topo do site*/
-
-section.topo-do-site .flex{
-    gap: 40px;
-    
-}
-section .img-topo-do-site{
-   
-    max-height: 600px;
-}
-
-section.topo-do-site{
-    width: 100%; /* 80% da largura do elemento pai */
-    padding: 2em; /* 2 vezes o tamanho da fonte atual */
-}
-h2.titulo{
-    font-size: 40px;
-    width: 100%; /* 80% da largura do elemento pai */
-    
-}
-.topo-do-site h1{
-    font-size: 55px;
-    width: 100%; /* 80% da largura do elemento pai */
-    
-}
-
-.topo-do-site p{
-    font-size: 40px;
-    width: 100%; /* 80% da largura do elemento pai */
-    
-}
-/*sobre*/
-section.sobre{
-    width: 100%; /* 80% da largura do elemento pai */
-    padding: 2em; /* 2 vezes o tamanho da fonte atual */
-}
-
-section.sobre{
-    align-items: center;
-}
-.sobre h2{
-    font-size: 40px;
-    width: 100%; /* 80% da largura do elemento pai */
-}
-.sobre p{
-    font-size: 30px;
-    width: 100%; /* 80% da largura do elemento pai */  
-}
-
-.img-sobre img{
-    max-height: 400px;
-    width: 100%; /* 80% da largura do elemento pai */
-    padding: 2em; /* 2 vezes o tamanho da fonte atual */
-}
-.contato-social{
-text-align: center;
-
-}
-
-
-
-/*especialidades*/
-.especialidades .especialidades-box{
-    border: 2px #ffffff solid ;
-}
-
-
-
-/*Portfólio*/
-.img-port{
-    width: 100%;
-}
-
-section.portfolio .flex{
-    gap: 60px;
-}
-
- /*formulario*/
- form{
-    width: 100%; /* 80% da largura do elemento pai */
-    padding: 2em; /* 2 vezes o tamanho da fonte atual */
-    margin: 0 auto;
-    margin-top: 40px;
-   
- }
-
- /*rodapé*/
-footer .line-footer{
-text-align: center;        
-}
-footer .flex{
-    gap: 30px;
-}
-
-.menu-mobile{
-    display: 1;
-}
- 
-}
-
-
-
-
-/* Estilos para telas menores que 641px de largura */
-@media only screen and (max-width: 641px) {
-  /* Insira aqui os estilos para telas menores que 641px */
-  
-  
-
+        font-size: 50px;
+    }
 
 
 
     .logo{
-        text-align: center;
-        margin: 0 auto;
-        max-width:150px;
+
+    align-items: center;
+    margin: auto;
+    max-width:200px;
     }
+
+
+    
 
     .flex{
         flex-direction: column;
@@ -583,10 +456,18 @@ footer .flex{
         flex-direction: column-reverse;
     }
 
+
+
     /*cabeçalho*/
     .menu-desktop, .candido-contato{
         display: none;
     }
+
+    .img-topo-do-site{
+        max-width: 300px;
+       
+    }
+
 
     /*topo do site*/
 
@@ -604,14 +485,20 @@ footer .flex{
         
     }
     .topo-do-site h1{
-        width: 100%; /* 80% da largura do elemento pai */
+        font-size: 27px;
+        
+        
         
     }
 
     .topo-do-site p{
+        font-size: 23px;
         width: 100%; /* 80% da largura do elemento pai */
         
     }
+
+
+
     /*sobre*/
     section.sobre{
         width: 100%; /* 80% da largura do elemento pai */
@@ -628,11 +515,11 @@ footer .flex{
         width: 100%; /* 80% da largura do elemento pai */  
     }
 
-    .img-sobre img{
-        width: 100%; /* 80% da largura do elemento pai */
-  padding: 2em; /* 2 vezes o tamanho da fonte atual */
-    }
-.contato-social{
+    .imag-sobre{
+        width: 100%;
+                 
+        }
+    .contato-social{
     text-align: center;
 }
 
