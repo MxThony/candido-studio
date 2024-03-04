@@ -27,6 +27,10 @@
     <link rel="icon" 
     type="image/png" 
     href="imagem/fav.png">
+
+     <!--JavaScript-->
+    <script src="menu.js" defer></script>
+    <!--fim JavaScript-->
 </head>
 
 <body>
@@ -41,17 +45,36 @@
             </a>
         </div><!--logotipo-->
         
-        <nav class="menu-desktop">
+        <nav class="menu-desktop"><!--PC-->
           <ul>
             <li><a href="#">Início</a></li>
-            <li><a href="#">Especialidades</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
           </ul>  
         </nav>
+    <div class="abrir-menu" id="menu-celular">
+        <i class="bi bi-list"></i>
+    </div>
+        <div  class="menu-mobile"><!--CELULAR-->
+            <div class="fechar-menu">
+                <i class="bi bi-x-square"></i>
+                <nav>
+                    <ul>
+                      <li><a href="contato">Contato</a></li>
+                      <li><a href="#especialidades">Especialidades</a></li>
+                      <li><a href="#sobre">Sobre</a></li>
+                      <li><a href="#portfolio">Projetos</a></li>
+                    </ul>  
+                  </nav>
+            </div>
+        </div>
+
+        <div class="overlay-menu"></div>
+        
 
         <div class="candido-contato">
-            <a href="#">
+            <a href="#contato">
                 <button>
                     Contato
                 </button>
@@ -92,7 +115,7 @@
         </div><!--Interface--->
     </section><!--todo do site-->
 
-    <section class="especialidades">
+    <section class="especialidades" id="especialidades">
         <div class="interface">
             <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
             <div class="flex">
@@ -129,7 +152,7 @@
         </div><!--Interface-->
     </section><!--Especialidades-->
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="interface">
             <div class="flex">
                 <div class="imag-sobre">
@@ -169,7 +192,7 @@
 
     </section><!--sobre-->
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="interface">
             <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
             <div class="flex">
@@ -199,7 +222,7 @@
       
     </section><!--portfolio-->
   
-    <section class="formulario">
+    <section class="formulario" id="contato">
         <div class="interface">
             <h2 class="titulo">ENTRAR EM<span class="laranja"> CONTATO</span></h2>
        <form action="">

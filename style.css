@@ -74,6 +74,68 @@ h2.titulo span{
 }
 
 /*Estilo do cabeçalho*/
+
+/*estilo do menu mobile*/
+
+.abrir-menu i{
+    color: #F96C03;
+    font-size: 40px;
+}
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+.menu-mobile{
+    height: 100vh;
+    background-color: #252525;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+    
+}
+.menu-mobile.abrindo-menu{
+    width: 70%;
+}
+
+.menu-mobile nav ul{
+text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #353434;
+    color: #F96C03;
+}
+
+.menu-mobile .fechar-menu i{
+    color: #F96C03;
+    font-size: 40px;
+}
+
+.menu-mobile .fechar-menu{
+    padding: 20px 5%;
+}
+
+/* fim do estilo do menu mobile*/
+
 header{
     padding: 40px 4%; /*para o espaçamento*/
 }
@@ -89,7 +151,7 @@ header nav ul{
     list-style-type: none;
 }
 
-header nav li{
+header nav.menu-desktop li{
     display: inline-block;
     padding: 0 40px;
 }
@@ -420,6 +482,13 @@ footer .line-footer{
     text-align: center;
 }
 
+    /*especialidades*/
+    .especialidades .especialidades-box{
+        border: 2px #ffffff solid ;
+    }
+
+
+
     /*Portfólio*/
     .img-port{
         width: 100%;
@@ -444,5 +513,10 @@ footer .line-footer{
     footer .flex{
         gap: 30px;
     }
+
+    .menu-mobile{
+        display: 1;
+    }
      
 }
+
