@@ -381,12 +381,12 @@ footer .line-footer{
     }
 
     .topo-do-site h1{
-        font-size: 28px;
+        width: 100%;
         gap: 5px;
     }
 
     .topo-do-site p{
-        font-size: 25px;    
+        width: 100%;   
     }
     /*sobre*/
     section.sobre{
@@ -397,9 +397,7 @@ footer .line-footer{
         align-items: center;
     }
     .sobre h2{
-        font-size: 28px;
-        line-height: 35px;
-        margin-bottom: 30px;
+        width: 100%;
     }
     .sobre p{
         font-size: 15px;    
@@ -408,7 +406,9 @@ footer .line-footer{
     .img-sobre img{
         width: 100%;
     }
-
+.contato-social{
+    text-align: center;
+}
 
     /*Portfólio*/
     .img-port{
@@ -421,9 +421,18 @@ footer .line-footer{
 
      /*formulario*/
      form{
-        max-width: 400px;
+        width: 100%;
         margin: 0 auto;
         margin-top: 40px;
        
      }
+
+     /*rodapé*/
+    footer .line-footer{
+    text-align: center;        
+    }
+    footer .flex{
+        gap: 30px;
+    }
+     
 }
