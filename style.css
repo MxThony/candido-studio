@@ -362,6 +362,7 @@ footer .line-footer{
     .logo{
         text-align: center;
         margin: 0 auto;
+        max-width:150px;
     }
 
     .flex{
@@ -385,7 +386,10 @@ footer .line-footer{
     section.topo-do-site{
         padding: 10px 4%;
     }
-
+    h2.titulo{
+        width: 100%;
+        gap: 5px;
+    }
     .topo-do-site h1{
         width: 100%;
         gap: 5px;
