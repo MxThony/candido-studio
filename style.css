@@ -112,10 +112,6 @@ section.topo-do-site .flex{
     font-size: 27px;
 }
 
-.quebra-linha {
-    display: block; /* Transforma o h1 em um elemento de bloco */
-    white-space: nowrap; /* Impede quebras de linha automáticas */
-}
 
 .topo-do-site .txt-topo-do-site p{
     color: #ffffff;
@@ -377,7 +373,7 @@ footer .line-footer{
     }
 
     section.topo-do-site{
-        padding: 20px 8%;
+        padding: 10px 4%;
     }
 
     .topo-do-site h1{
@@ -390,7 +386,7 @@ footer .line-footer{
     }
     /*sobre*/
     section.sobre{
-        padding: 20px 8%;
+        padding: 10px 4%;
     }
 
     section.sobre{
@@ -400,7 +396,7 @@ footer .line-footer{
         width: 100%;
     }
     .sobre p{
-        font-size: 15px;    
+        width: 100%;   
     }
 
     .img-sobre img{
