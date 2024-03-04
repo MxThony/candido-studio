@@ -442,41 +442,46 @@ footer .line-footer{
     /*topo do site*/
 
     section.topo-do-site .flex{
-        gap: 40px
+        gap: 40px;
+        
     }
 
     section.topo-do-site{
-        padding: 10px 4%;
+        width: 100%; /* 80% da largura do elemento pai */
+        padding: 2em; /* 2 vezes o tamanho da fonte atual */
     }
     h2.titulo{
-        width: 100%;
-        gap: 5px;
+        width: 100%; /* 80% da largura do elemento pai */
+        
     }
     .topo-do-site h1{
-        width: 100%;
-        gap: 5px;
+        width: 100%; /* 80% da largura do elemento pai */
+        
     }
 
     .topo-do-site p{
-        width: 100%;   
+        width: 100%; /* 80% da largura do elemento pai */
+        
     }
     /*sobre*/
     section.sobre{
-        padding: 10px 4%;
+        width: 100%; /* 80% da largura do elemento pai */
+        padding: 2em; /* 2 vezes o tamanho da fonte atual */
     }
 
     section.sobre{
         align-items: center;
     }
     .sobre h2{
-        width: 100%;
+        width: 100%; /* 80% da largura do elemento pai */
     }
     .sobre p{
-        width: 100%;   
+        width: 100%; /* 80% da largura do elemento pai */  
     }
 
     .img-sobre img{
-        width: 100%;
+        width: 100%; /* 80% da largura do elemento pai */
+  padding: 2em; /* 2 vezes o tamanho da fonte atual */
     }
 .contato-social{
     text-align: center;
@@ -500,7 +505,8 @@ footer .line-footer{
 
      /*formulario*/
      form{
-        width: 100%;
+        width: 100%; /* 80% da largura do elemento pai */
+        padding: 2em; /* 2 vezes o tamanho da fonte atual */
         margin: 0 auto;
         margin-top: 40px;
        
