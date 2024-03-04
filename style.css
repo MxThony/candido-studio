@@ -80,6 +80,7 @@ h2.titulo span{
 .abrir-menu i{
     color: #F96C03;
     font-size: 60px;
+    
 }
 
 .overlay-menu{
@@ -556,7 +557,11 @@ footer .line-footer{
 }   
 
 
-
+@media only screen and (min-width: 900px) {
+    .abrir-menu {
+      display: none;
+    }
+  }
 
 /*RECURSOS DE RESPONSIVIDADE*/
 
@@ -692,8 +697,8 @@ footer .line-footer{
         gap: 30px;
     }
 
-    .menu-mobile{
-        display: 1;
+    .abrir-menu{
+        display: block;
     }
      
 }
