@@ -10,6 +10,10 @@
 
 }
 
+.logo{
+    max-width: 150px;
+}
+
 .contato-social button{
     height: 60px;
     width: 60px;
@@ -354,6 +358,12 @@ footer .line-footer{
 /*Responsividade*/
 @media screen and (max-width: 1020px){
     /*geral*/
+
+    .logo{
+        text-align: center;
+        margin: 0 auto;
+    }
+
     .flex{
         flex-direction: column;
     }
