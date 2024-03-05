@@ -274,30 +274,36 @@ section.sobre .flex{
 
 
 
-/* Estilos para o contêiner do slide */
+
 #slideContainer {
     display: flex;
-    overflow: hidden; /* Oculta conteúdo que ultrapassa os limites do contêiner */
-    width: 100%; /* Defina a largura do contêiner do slide como 100% */
+    overflow: hidden; 
+    width: 100%; 
+    
 }
 
+
+
 .slide{
+    margin-top: 80px;
     flex-shrink: 0;
     display: flex;   
 }
 
-/* Estilos para os elementos do slide */
+
 .slide-item {
-    flex: 0 0 auto; /* Define os elementos do slide para que não sejam redimensionados */
-    padding: 10px; /* Adiciona preenchimento aos elementos do slide */
-    margin-right: 3px; /* Reduz a margem direita */
-    margin-left: 3px; /* Reduz a margem esquerda */}
-/* Estilos para a imagem do cliente */
+    flex: 0 0 auto; 
+    padding: 10px; 
+    margin-right: 3px; 
+    margin-left: 3px; }
+
 
 .img-slide {
-    max-width: 50%; /* Garante que a imagem do cliente não ultrapasse a largura do elemento pai */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 50%; 
+    height: auto;  
 }
+
+
 
 
 
