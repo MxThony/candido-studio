@@ -26,8 +26,13 @@
     margin: 20px 0 40px;
 }
 
+
 body{
-    background-color: black;
+    background-color: rgb(15, 15, 15);
+}
+
+body{
+    
     height: 100vh;
 }
 .interface{
@@ -74,6 +79,30 @@ h2.titulo span{
 }
 
 /*Estilo do cabeçalho*/
+
+.cabeçalho{
+    
+    padding: 35px 4%;
+    gap: 60px; 
+    display: flex;
+    background-color: black;
+    max-height: 38px;
+    position: fixed; /* Fixa o cabeçalho na parte superior da janela */
+    top: 0;
+    left: 0;
+    z-index: 10000; /* Garante que o cabeçalho esteja sobre todos os outros elementos */
+    width: 100%;
+}
+
+/* Ajusta o espaçamento entre os itens do menu */
+.menu-desktop ul {
+    margin-right: 80px; /* Ajuste o valor conforme necessário */
+}
+
+/* Ajusta o espaçamento entre o logo e o menu */
+.logo {
+    margin-right: 80px; /* Ajuste o valor conforme necessário */
+}
 
 /*estilo do menu mobile*/
 
@@ -188,6 +217,39 @@ section.topo-do-site .flex{
     color: #ffffff;
     margin: 15px 0;
 }
+
+/*Estilo do contador*/ 
+.contadores {
+    padding: 50px 4%;
+    gap: 60px; 
+    
+   
+    max-height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    
+}
+
+.contador-box {
+    text-align: center;
+}
+
+.contador-box h2 {
+    font-size: 15px;
+    
+    color: #ffffff; /* Cor do título */
+}
+
+.contador {
+    font-size: 50px;
+    font-weight: bold;
+    color: #F96C03; /* Cor do contador */
+}
+
+
 /*Estilo das espcialidades*/
 
 section.especialidades{
@@ -327,7 +389,7 @@ section.portfolio .flex{
 .img-port{
     width: 360px;
     height: 460px;
-    background-color: #ffffff;
+   
     border-radius: 20px;
     background-size: cover;
     background-position: 100% 0%;
@@ -363,6 +425,15 @@ section.portfolio .flex{
 }
 
 /*Estilo entrar em contato*/
+
+
+form {
+    margin-bottom: 40px; /* Adicionado margem inferior ao formulário */
+    width: 100%;
+    padding: 2em;
+    margin: 0 auto;
+    margin-top: 40px;
+}
 
 form{
     max-width: 500px;
@@ -447,17 +518,17 @@ form .enviar-candido input:hover{
 
 /*Estilo do rodapé*/
 
-footer{
-    margin-top: 40px;
+footer {
+    margin-top: 0; /* Alterado para 0px */
     padding: 60px 4%;
     background-color: #181818;
 }
 
-footer .flex{
+footer .flex {
     justify-content: space-between;
 }
 
-footer .line-footer{
+footer .line-footer {
     padding: 10px 0;
     border-bottom: 2px solid #F96C03;
 }
@@ -596,11 +667,30 @@ footer .line-footer{
 }   
 
 
+
 @media only screen and (min-width: 997px) {
     .abrir-menu {
       display: none;
     }
   }
+
+  /*menu monile*/
+
+  .abrir-menu i{
+    font-size: 50px;
+    padding-left: 200px;
+}
+
+
+
+.logo{
+
+align-items: center;
+margin: 30px auto;
+
+max-width:180px;
+
+}
 
 /*RECURSOS DE RESPONSIVIDADE*/
 
@@ -608,6 +698,8 @@ footer .line-footer{
 @media only screen and (max-width: 641px){
     /* Insira aqui os estilos para telas menores que 641px */
 
+    
+    
     /*sobre-marca dos clientes*/
     .slide{
         margin-top: 50px;       
@@ -628,18 +720,17 @@ footer .line-footer{
   
   /*menu monile*/
 
-    .abrir-menu i{
-        font-size: 50px;
-    }
+  .abrir-menu i{
+    font-size: 50px;
+    padding-left: 23px;
+}
 
 
 
-    .logo{
-
-    align-items: center;
-    margin: auto;
-    max-width:200px;
-    }
+.logo{
+    margin: 0; /* Remova qualquer margem */
+    max-width: 180px;
+}
 
 
     
@@ -670,7 +761,14 @@ footer .line-footer{
         gap: 40px;
         
     }
+    .cabeçalho{
+        width: 100%; /* 80% da largura do elemento pai */
+        padding: 2em; /* 2 vezes o tamanho da fonte atual */
+        margin: auto;
+    }
 
+
+    
     section.topo-do-site{
         width: 100%; /* 80% da largura do elemento pai */
         padding: 2em; /* 2 vezes o tamanho da fonte atual */

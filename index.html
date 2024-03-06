@@ -35,7 +35,7 @@
 
 <body>
     
-    <header>
+    <header class="cabeçalho">
         
     <div class="interface">
         
@@ -47,7 +47,7 @@
         
         <nav class="menu-desktop"><!--PC-->
           <ul>
-            <li><a href="#">Início</a></li>
+            <li><a href="#inicio-do-site">Início</a></li>
             <li><a href="#especialidades">Especialidades</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#portfolio">Projetos</a></li>
@@ -61,7 +61,7 @@
                 <i class="bi bi-x-square"></i>
                 <nav>
                     <ul>
-                      <li><a href="contato">Contato</a></li>
+                      <li><a href="#contato">Contato</a></li>
                       <li><a href="#especialidades">Especialidades</a></li>
                       <li><a href="#sobre">Sobre</a></li>
                       <li><a href="#portfolio">Projetos</a></li>
@@ -86,8 +86,8 @@
 
 </header>
 
-<main>
-    <section class="topo-do-site">
+<main class="superior-do-site">
+    <section class="topo-do-site" style="padding-top: 80px; padding-bottom: 20px;">
         <div class="interface">
             <div class="flex">
                 <div class="txt-topo-do-site">
@@ -105,13 +105,28 @@
                 
                 </div> <!--txt topo do site-->
                 
-                <div>
+                <div id="inicio-do-site">
                     <img class="img-topo-do-site" src="imagem/Anthony.png" 
                     alt="imagem de Anthony">
                 </div>
             </div>
         </div><!--Interface--->
     </section><!--todo do site-->
+
+    <section class="contadores"> <!--Contagem-->
+        <div class="contador-box">
+            <h2>Logotipos</h2>
+            <p class="contador contador-logotipos">0</p>
+        </div>
+        <div class="contador-box">
+            <h2>Campanhas</h2>
+            <p class="contador contador-campanhas">0</p>
+        </div>
+        <div class="contador-box">
+            <h2>Clientes</h2>
+            <p class="contador contador-clientes">0</p>
+        </div>
+    </section>
 
     <section class="especialidades" id="especialidades">
         <div class="interface">

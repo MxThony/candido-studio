@@ -1,3 +1,25 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const abrirMenu = document.querySelector('.abrir-menu');
+    const fecharMenu = document.querySelector('.fechar-menu');
+    const menuMobile = document.querySelector('.menu-mobile');
+    const overlayMenu = document.querySelector('.overlay-menu');
+
+    abrirMenu.addEventListener('click', function() {
+        menuMobile.classList.add('abrindo-menu');
+        overlayMenu.style.display = 'block';
+    });
+
+    fecharMenu.addEventListener('click', function() {
+        menuMobile.classList.remove('abrindo-menu');
+        overlayMenu.style.display = 'none';
+    });
+
+    overlayMenu.addEventListener('click', function() {
+        menuMobile.classList.remove('abrindo-menu');
+        overlayMenu.style.display = 'none';
+    });
+});
+
 // Configurações do slide
 var currentSlide = 0;
 var slides = document.querySelectorAll('.slide-item');
@@ -21,7 +43,7 @@ function showSlides() {
         currentSlide = 0; // Volta para o primeiro slide
     }
 
-    intervalId = setTimeout(showSlides, 3000);
+    intervalId = setTimeout(showSlides, 900);
 }
 
 // Inicia a exibição dos slides após o carregamento da página
@@ -29,25 +51,6 @@ window.onload = function() {
     setSlideWidth();
     showSlides();
 }
-
-// Função para definir a largura dos slides
-function setSlideWidth() {
-    var containerWidth = document.getElementById("slideContainer").offsetWidth;
-    var slideWidth = containerWidth / visibleClients;
-    for (var i = 0; i < slides.length; i++) {
-        slides[i].style.width = slideWidth + "px"; // Define a largura do slide
-    }
-}
-
-// Pausa a exibição do slide quando o cursor estiver sobre ele
-document.getElementById("cliente").addEventListener("mouseenter", function() {
-    clearInterval(intervalId);
-});
-
-// Continua a exibição do slide quando o cursor sair dele
-document.getElementById("cliente").addEventListener("mouseleave", function() {
-    intervalId = setTimeout(showSlides, 3000);
-});
 
 // Função para definir a largura dos slides com base no tamanho da tela
 function setSlideWidth() {
@@ -67,13 +70,80 @@ function setSlideWidth() {
     }
 }
 
-// Inicia a exibição dos slides e define a largura dos slides após o carregamento da página
-window.onload = function() {
-    setSlideWidth();
-    showSlides();
-}
-
 // Redimensiona os slides e redefine a largura dos slides quando a janela é redimensionada
 window.addEventListener("resize", function() {
     setSlideWidth();
 });
+
+// Defina o limite máximo para os contadores
+const limiteLogotipos = 20;
+const limiteCampanhas = 25;
+const limiteClientes = 30;
+
+let contadorLogotipos = 0;
+let contadorCampanhas = 0;
+let contadorClientes = 0;
+
+const contadorLogotiposElemento = document.querySelector('.contador-logotipos');
+const contadorCampanhasElemento = document.querySelector('.contador-campanhas');
+const contadorClientesElemento = document.querySelector('.contador-clientes');
+
+function atualizarContadores() {
+    if (contadorLogotipos < limiteLogotipos) {
+        contadorLogotipos++;
+        contadorLogotiposElemento.textContent = contadorLogotipos;
+    } else {
+        contadorLogotiposElemento.textContent = limiteLogotipos + "+";
+    }
+
+    if (contadorCampanhas < limiteCampanhas) {
+        contadorCampanhas++;
+        contadorCampanhasElemento.textContent = contadorCampanhas;
+    } else {
+        contadorCampanhasElemento.textContent = limiteCampanhas + "+";
+    }
+
+    if (contadorClientes < limiteClientes) {
+        contadorClientes++;
+        contadorClientesElemento.textContent = contadorClientes;
+    } else {
+        contadorClientesElemento.textContent = limiteClientes + "+";
+    }
+}
+
+setInterval(() => {
+    atualizarContadores();
+}, 200); // Atualiza os contadores a cada segundo
+
+window.addEventListener('scroll', function () {
+    var section = document.querySelector('.contador-section');
+    var offset = section.offsetTop - window.innerHeight + 100; // Adicionei uma margem de 100 pixels
+
+    if (window.pageYOffset > offset) {
+        startCounting();
+        window.removeEventListener('scroll', startCounting);
+    }
+});
+
+function startCounting() {
+    var counters = document.querySelectorAll('.contador-numero');
+    var speed = 200; // Velocidade da contagem em milissegundos
+
+    counters.forEach(counter => {
+        var updateCount = () => {
+            var target = +counter.getAttribute('data-target');
+            var count = +counter.innerText;
+
+            var inc = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + inc);
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCount();
+    });
+}
