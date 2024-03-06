@@ -10,6 +10,30 @@
 
 }
 
+/*botão fixo*/
+.botao-fixo {
+    position: fixed;
+    padding: 5%;
+    bottom: 10px; /* Distância do fundo da tela */
+    right: 10px; /* Distância da direita da tela */
+    z-index: 99999; /* Garante que o botão esteja sobre outros elementos */
+}
+
+.botao-fixo button{
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(90deg ,#F96C03, #CA415C, #B447AE);
+    color: #000000;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 45px;
+    border: none;
+    
+}
+
+
 .logo{
     max-width: 100px;
 }
@@ -542,6 +566,19 @@ footer .line-footer {
 @media only screen and (max-width: 997px) and (min-width: 642px){
     /* Insira aqui os estilos para telas entre 641px e 997px */
 
+    .botao-fixo {
+        bottom: 3%; /* Reduz a distância do botão fixo do fundo */
+        right: 3%; /* Reduz a distância do botão fixo da margem direita */
+        padding: 5%;
+    }
+
+    .botao-fixo a {
+        width: 40px; /* Tamanho reduzido do botão em dispositivos móveis */
+        height: 40px; /* Tamanho reduzido do botão em dispositivos móveis */
+        line-height: 40px; /* Ajuste da linha de texto em dispositivos móveis */
+        font-size: 16px; /* Tamanho da fonte reduzido em dispositivos móveis */
+    }
+
     .abrir-menu i{
         font-size: 50px;
     }
@@ -679,6 +716,19 @@ footer .line-footer {
     }
   }
 
+  .botao-fixo {
+    bottom: 3%; /* Reduz a distância do botão fixo do fundo */
+    right: 3%; /* Reduz a distância do botão fixo da margem direita */
+    padding: 5%;
+}
+
+.botao-fixo a {
+    width: 40px; /* Tamanho reduzido do botão em dispositivos móveis */
+    height: 40px; /* Tamanho reduzido do botão em dispositivos móveis */
+    line-height: 40px; /* Ajuste da linha de texto em dispositivos móveis */
+    font-size: 16px; /* Tamanho da fonte reduzido em dispositivos móveis */
+}
+
   /*menu monile*/
 
   .abrir-menu i{
@@ -703,6 +753,18 @@ max-width:180px;
 @media only screen and (max-width: 641px){
     /* Insira aqui os estilos para telas menores que 641px */
 
+    .botao-fixo {
+        bottom: 3%; /* Reduz a distância do botão fixo do fundo */
+        right: 3%; /* Reduz a distância do botão fixo da margem direita */
+        padding: 5%;
+    }
+
+    .botao-fixo a {
+        width: 40px; /* Tamanho reduzido do botão em dispositivos móveis */
+        height: 40px; /* Tamanho reduzido do botão em dispositivos móveis */
+        line-height: 40px; /* Ajuste da linha de texto em dispositivos móveis */
+        font-size: 16px; /* Tamanho da fonte reduzido em dispositivos móveis */
+    }
     
     /*estilo de contador*/
     
