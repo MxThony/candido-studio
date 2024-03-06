@@ -1,7 +1,7 @@
 // Configurações do slide
 var currentSlide = 0;
 var slides = document.querySelectorAll('.slide-item');
-var visibleClients = 6; // Define o número de clientes visíveis por vez
+var visibleClients = 5; // Define o número de clientes visíveis por vez
 var intervalId; // Variável para armazenar o ID do intervalo
 var totalSlides = slides.length;
 
@@ -49,25 +49,31 @@ document.getElementById("cliente").addEventListener("mouseleave", function() {
     intervalId = setTimeout(showSlides, 3000);
 });
 
-// Função para definir o número de clientes visíveis com base na largura da tela
-function setVisibleClients() {
-    var screenWidth = window.innerWidth;
-    if (screenWidth <= 641) { // Defina a largura de tela limite para quando deseja mostrar 3 clientes
-        visibleClients = 3;
-    } else {
-        visibleClients = 4; // Se a largura da tela for maior que 768px, mostre 4 clientes
+// Função para definir a largura dos slides com base no tamanho da tela
+function setSlideWidth() {
+    var windowWidth = window.innerWidth;
+    if (windowWidth >= 1024) { // Tamanho da tela maior ou igual a 1024px (por exemplo, dispositivos de desktop)
+        visibleClients = 6; // Exibe 5 clientes
+    } else if (windowWidth >= 768) { // Tamanho da tela maior ou igual a 768px (por exemplo, tablets)
+        visibleClients = 4; // Exibe 4 clientes
+    } else { // Tamanho da tela menor que 768px (por exemplo, dispositivos móveis)
+        visibleClients = 3; // Exibe 3 clientes
+    }
+
+    var containerWidth = document.getElementById("slideContainer").offsetWidth;
+    var slideWidth = containerWidth / visibleClients;
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.width = slideWidth + "px"; // Define a largura do slide
     }
 }
 
-// Inicia a exibição dos slides após o carregamento da página e define o número de clientes visíveis
+// Inicia a exibição dos slides e define a largura dos slides após o carregamento da página
 window.onload = function() {
-    setVisibleClients();
     setSlideWidth();
     showSlides();
 }
 
-// Atualiza o número de clientes visíveis quando a tela for redimensionada
-window.addEventListener('resize', function() {
-    setVisibleClients();
+// Redimensiona os slides e redefine a largura dos slides quando a janela é redimensionada
+window.addEventListener("resize", function() {
     setSlideWidth();
 });

@@ -279,7 +279,7 @@ section.sobre .flex{
     display: flex;
     overflow: hidden; 
     width: 100%; 
-    
+     
 }
 
 
@@ -287,19 +287,21 @@ section.sobre .flex{
 .slide{
     margin-top: 80px;
     flex-shrink: 0;
-    display: flex;   
+    display: flex; 
+   
+     
 }
 
 
 .slide-item {
     flex: 0 0 auto; 
-    padding: 10px; 
-    margin-right: 3px; 
+    padding: 3px; 
+    margin-right: 10px;  
     margin-left: 3px; }
 
 
 .img-slide {
-    max-width: 50%; 
+    max-width: 58%; 
     height: auto;  
 }
 
@@ -605,10 +607,26 @@ footer .line-footer{
 /* Estilos para telas menores que 641px de largura */
 @media only screen and (max-width: 641px){
     /* Insira aqui os estilos para telas menores que 641px */
-  
+
+    /*sobre-marca dos clientes*/
+    .slide{
+        margin-top: 50px;       
+    }
+    
+    
+    .slide-item {
+        
+        
+        margin-right: 5px;  
+        margin-left: 10px; }
+    
+    
+    .img-slide {
+        max-width: 70%; 
+    }
  
   
-  
+  /*menu monile*/
 
     .abrir-menu i{
         font-size: 50px;
